@@ -32,7 +32,7 @@ pipeline {
         }
 	stage('Deployment') {
 	   steps {
-		sh 'scp -i "C:/Users/cmeharkranth/Desktop/Shilpa.pem" target/srtech.war root@172.31.83.24:/root/practice/apache-tomcat-10.1.43/webapps'
+		sh 'scp -i /home/ubuntu/file/Shilpa.pem target/srtech.war root@172.31.83.24:/root/practice/apache-tomcat-10.1.43/webapps'
 	}
     }
 }
